@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-02 19:47:58.558329",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "countid",
+  "partyid",
+  "roundid",
+  "count",
+  "timestamp"
+ ],
+ "fields": [
+  {
+   "fieldname": "countid",
+   "fieldtype": "Data",
+   "label": "CountID"
+  },
+  {
+   "fieldname": "partyid",
+   "fieldtype": "Link",
+   "label": "PartyID",
+   "options": "Political Party"
+  },
+  {
+   "fieldname": "roundid",
+   "fieldtype": "Link",
+   "label": "RoundID",
+   "options": "Political Party"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "label": "Count"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-02 19:50:06.761376",
+ "modified_by": "Administrator",
+ "module": "Poll Tracker",
+ "name": "Polling Count",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

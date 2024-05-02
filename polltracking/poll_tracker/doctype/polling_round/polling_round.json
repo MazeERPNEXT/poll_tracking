@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-02 19:46:07.633822",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "roundid",
+  "roundnumber",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "roundid",
+   "fieldtype": "Data",
+   "label": "RoundID"
+  },
+  {
+   "fieldname": "roundnumber",
+   "fieldtype": "Int",
+   "label": "RoundNumber"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-02 19:47:25.784192",
+ "modified_by": "Administrator",
+ "module": "Poll Tracker",
+ "name": "Polling Round",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

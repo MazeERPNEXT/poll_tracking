@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-02 19:44:14.207612",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "candidateid",
+  "candidatename",
+  "partyid",
+  "region"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidateid",
+   "fieldtype": "Data",
+   "label": "CandidateID"
+  },
+  {
+   "fieldname": "candidatename",
+   "fieldtype": "Data",
+   "label": "CandidateName"
+  },
+  {
+   "fieldname": "partyid",
+   "fieldtype": "Link",
+   "label": "PartyID",
+   "options": "Political Party"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-02 19:51:35.529999",
+ "modified_by": "Administrator",
+ "module": "Poll Tracker",
+ "name": "Election Candidate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
