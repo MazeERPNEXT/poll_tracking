@@ -2,6 +2,7 @@ import frappe
 from frappe import auth
 from frappe.utils import get_site_name
 import base64
+from datetime import datetime 
 
 @frappe.whitelist( allow_guest=True )
 def mobile_login(usr,pwd):
@@ -59,8 +60,41 @@ def generate_keys(user):
     return {"api_secret": base64.b64encode(user_details.api_secret.encode()).decode()}
 
 @frappe.whitelist(allow_guest=True)
-def registered_user_profile_details():
-    return {"user":'test'}
+def registered_user_profile_details(email):
+    reporter = frappe.get_doc("Reporter",email)
+    user = frappe.get_doc("User",reporter.user)
+    # Convert string to datetime object
+    datetime_obj = datetime.strptime(user.last_login, "%Y-%m-%d %H:%M:%S.%f")
+
+    # Format the datetime object
+    user_last_login = datetime_obj.strftime("%Y-%m-%d %H:%M:%S")
+# print()
+    # Original string
+    # original_string = "2024-05-06 13:21:23.450535"
+
+    # # Convert string to datetime object
+    # datetime_obj = datetime.strptime(original_string, "%Y-%m-%d %H:%M:%S.%f")
+
+    # # Define the timezone (replace 'America/New_York' with the desired timezone)
+    # timezone = pytz.timezone('America/New_York')
+
+    # # Localize the datetime object with the timezone
+    # localized_dt = timezone.localize(datetime_obj)
+    return {
+            "reporter":reporter,
+            # "user":user
+            "user":{
+                "name":user.name,
+                "first_name":user.first_name,
+                "email":user.email,
+                "username":user.username,
+                "full_name":user.full_name,
+                "language":user.language,
+                "last_login":user_last_login,
+                "role_profiles":user.role_profiles,
+                "roles":user.roles                
+                 }
+            }
      
 # @frappe.whitelist( allow_guest=True ) 
 # def get_sales_invoice_list():
