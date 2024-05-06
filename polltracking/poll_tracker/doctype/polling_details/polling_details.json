@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-03 11:18:49.876166",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate",
+  "party",
+  "previous_roundsevm",
+  "current_roundsevm",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Candidate"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Party"
+  },
+  {
+   "fieldname": "previous_roundsevm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Previous Rounds(EVM)"
+  },
+  {
+   "fieldname": "current_roundsevm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Current Rounds(EVM)"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-03 11:22:49.003483",
+ "modified_by": "Administrator",
+ "module": "Poll Tracker",
+ "name": "Polling details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

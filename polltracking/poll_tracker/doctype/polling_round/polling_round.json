@@ -5,31 +5,35 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "roundid",
+  "round_id",
   "roundnumber",
   "status"
  ],
  "fields": [
   {
-   "fieldname": "roundid",
-   "fieldtype": "Data",
-   "label": "RoundID"
-  },
-  {
    "fieldname": "roundnumber",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "RoundNumber"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Open\nClosed"
+  },
+  {
+   "fieldname": "round_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Round ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 19:47:25.784192",
+ "modified": "2024-05-02 22:59:20.060918",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Polling Round",

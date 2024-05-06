@@ -1,51 +1,60 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{constituency}",
  "creation": "2024-05-02 19:47:58.558329",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "countid",
-  "partyid",
-  "roundid",
-  "count",
-  "timestamp"
+  "state",
+  "constituency",
+  "reporter",
+  "timestamp",
+  "table_nfji"
  ],
  "fields": [
   {
-   "fieldname": "countid",
-   "fieldtype": "Data",
-   "label": "CountID"
-  },
-  {
-   "fieldname": "partyid",
-   "fieldtype": "Link",
-   "label": "PartyID",
-   "options": "Political Party"
-  },
-  {
-   "fieldname": "roundid",
-   "fieldtype": "Link",
-   "label": "RoundID",
-   "options": "Political Party"
-  },
-  {
-   "fieldname": "count",
-   "fieldtype": "Int",
-   "label": "Count"
-  },
-  {
    "fieldname": "timestamp",
    "fieldtype": "Datetime",
-   "label": "Timestamp"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Count Starting Time"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State"
+  },
+  {
+   "fieldname": "reporter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reporter"
+  },
+  {
+   "fieldname": "table_nfji",
+   "fieldtype": "Table",
+   "options": "Polling details"
+  },
+  {
+   "fieldname": "constituency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Constituency",
+   "options": "Constituency"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 19:50:06.761376",
+ "modified": "2024-05-03 11:43:07.035463",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Polling Count",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

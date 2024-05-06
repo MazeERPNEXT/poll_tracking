@@ -1,0 +1,88 @@
+.navbar{
+     /* background-image: linear-gradient(0deg, rgb(149, 255, 0) 0%, rgb(204, 255, 0) 100%) */
+    // background-color: #44b09e;
+    background-image: linear-gradient(315deg, #521011 0%, #521011 74%);
+}
+#navbar-breadcrumbs li a {
+    color: #fff  !important;
+}    
+
+.navbar-nav li a.nav-link{
+    color:#fff;
+}
+
+.search-icon {
+    display: none !important;
+}
+
+
+   // bell
+   .notifications-seen
+   {
+       display: none;
+   }
+
+   // | icon
+   .vertical-bar{
+       display: none !important;
+   }
+
+   //  help   
+   .d-lg-block {
+       display: none !important;
+   }
+// workspace
+//    #page-Workspaces > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > button:nth-child(1){
+
+//     display: none;
+//    }
+//    #page-Workspaces > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
+//    {
+//     display: none;
+//    }
+// // shipment doctype
+// #page-List\/Shipments\/List > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1){
+//     display: none;
+// }
+
+// .menu-btn-group > button:nth-child(1){
+//     display: none;
+// }
+
+// .custom-btn-group{
+//     background-color: red;
+//     display: none;
+// }
+
+// button.btn:nth-child(5){
+//     background-image: linear-gradient(0deg, rgb(255 135 0) 0%, rgb(255 167 0) 100%);
+//     color: #fff; 
+// }
+// .btn-secondary,button.ellipsis,button.text-muted,.menu-btn-group > button:nth-child(1){
+//     background-image: linear-gradient(0deg, rgb(255 135 0) 0%, rgb(255 167 0) 100%);
+//     color: #fff !important;
+// }
+
+// #page-List\/Shipments\/List{
+//     background-image: linear-gradient(0deg, rgb(255 135 0) 0%, rgb(255 167 0) 100%);
+// }
+
+// .navbar-nav ul li.nav-item:nth-child(4) > a:nth-child(1){
+//     display: none !important;
+// }
+
+// .notifications-seen{
+//     display: none;
+// }
+
+/* .completed {
+    color: green;
+}
+
+.incompleted {
+    color: red;
+}
+
+.other {
+    color: orange;
+} */

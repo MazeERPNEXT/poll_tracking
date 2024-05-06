@@ -1,14 +1,18 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:user_name",
  "creation": "2024-05-02 19:37:01.663611",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "reporterid",
   "user",
+  "user_name",
   "imei_number",
-  "region"
+  "region",
+  "constituency"
  ],
  "fields": [
   {
@@ -25,20 +29,41 @@
   {
    "fieldname": "region",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Region"
   },
   {
    "fieldname": "reporterid",
    "fieldtype": "Data",
    "label": "ReporterID"
+  },
+  {
+   "fieldname": "constituency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Constituency",
+   "options": "Constituency"
+  },
+  {
+   "fetch_from": "user.username",
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reporter name",
+   "options": "User",
+   "unique": 1
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 19:42:13.328621",
+ "modified": "2024-05-04 17:09:21.508290",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Reporter",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

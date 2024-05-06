@@ -11,6 +11,9 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/polltracking/css/polltracking.css"
+
+# include js, css files in header of desk.html
+app_include_css = "poll_tracking.bundle.css"
 # app_include_js = "/assets/polltracking/js/polltracking.js"
 
 # include js, css files in header of web template

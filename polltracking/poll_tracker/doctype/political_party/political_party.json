@@ -1,12 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:party_name",
  "creation": "2024-05-02 19:43:01.023155",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "partyid",
-  "partyname"
+  "party_name"
  ],
  "fields": [
   {
@@ -15,17 +16,21 @@
    "label": "PartyID"
   },
   {
-   "fieldname": "partyname",
+   "fieldname": "party_name",
    "fieldtype": "Data",
-   "label": "PartyName"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Party Name",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 19:43:47.452953",
+ "modified": "2024-05-03 15:09:05.469017",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Political Party",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
