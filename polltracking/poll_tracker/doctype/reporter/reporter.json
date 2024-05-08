@@ -7,9 +7,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_dlfu",
   "reporterid",
   "user",
   "user_name",
+  "column_break_cxnq",
   "imei_number",
   "region",
   "constituency"
@@ -18,7 +20,7 @@
   {
    "fieldname": "user",
    "fieldtype": "Link",
-   "label": "User",
+   "label": "Reporter",
    "options": "User"
   },
   {
@@ -36,7 +38,7 @@
   {
    "fieldname": "reporterid",
    "fieldtype": "Data",
-   "label": "ReporterID"
+   "label": "Reporter ID"
   },
   {
    "fieldname": "constituency",
@@ -54,12 +56,20 @@
    "label": "Reporter name",
    "options": "User",
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_cxnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dlfu",
+   "fieldtype": "Section Break"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-04 17:09:21.508290",
+ "modified": "2024-05-08 14:43:29.852436",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Reporter",

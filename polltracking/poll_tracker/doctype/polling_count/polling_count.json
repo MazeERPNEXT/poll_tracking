@@ -10,20 +10,13 @@
   "constituency",
   "reporter",
   "column_break_lueo",
-  "timestamp",
+  "starting_time",
   "round",
   "section_break_ldek",
   "polling_details_column",
   "polling_items"
  ],
  "fields": [
-  {
-   "fieldname": "timestamp",
-   "fieldtype": "Datetime",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Count Starting Time"
-  },
   {
    "fieldname": "state",
    "fieldtype": "Data",
@@ -71,11 +64,18 @@
    "fieldname": "polling_details_column",
    "fieldtype": "Column Break",
    "label": "Polling Details"
+  },
+  {
+   "fieldname": "starting_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Count Starting Time"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-06 18:58:49.166599",
+ "modified": "2024-05-07 16:35:20.904451",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Polling Count",

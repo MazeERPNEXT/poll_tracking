@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "sources": ["../../../../../../../../tmp/tmp-5929-TeimHJ5t5mbC/polltracking/polltracking/public/scss/poll_tracking.bundle.css"],
+  "sources": ["../../../../../../../../tmp/tmp-5477-tnRRK9m1f43k/polltracking/polltracking/public/scss/poll_tracking.bundle.css"],
   "sourcesContent": [".navbar {\n  /* background-image: linear-gradient(0deg, rgb(149, 255, 0) 0%, rgb(204, 255, 0) 100%) */\n  background-image: linear-gradient(-315deg, #521011 0%, #521011 74%);\n}\n\n#navbar-breadcrumbs li a {\n  color: #fff !important;\n}\n\n.navbar-nav li a.nav-link {\n  color: #fff;\n}\n\n.search-icon {\n  display: none !important;\n}\n\n.notifications-seen {\n  display: none;\n}\n\n.vertical-bar {\n  display: none !important;\n}\n\n.d-lg-block {\n  display: none !important;\n}\n\n/* .completed {\n    color: green;\n}\n\n.incompleted {\n    color: red;\n}\n\n.other {\n    color: orange;\n} */"],
   "mappings": ";AAAA;AAEE;AAAA;AAGF;AACE;AAAA;AAGF;AACE;AAAA;AAGF;AACE;AAAA;AAGF;AACE;AAAA;AAGF;AACE;AAAA;AAGF;AACE;AAAA;",
   "names": []

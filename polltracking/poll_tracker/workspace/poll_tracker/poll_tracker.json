@@ -1,0 +1,78 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"jWNtIxK5xz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Poll Tracker</span>\",\"col\":12}},{\"id\":\"sYzc_ZByn3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gSv25fHMky\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reporter\",\"col\":3}},{\"id\":\"jlU4jahmWF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Constituency\",\"col\":3}},{\"id\":\"0ZYMHdVKDo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Political Party\",\"col\":3}},{\"id\":\"uo2qKKHdqQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Election Candidate\",\"col\":3}},{\"id\":\"eCllnwJ-eu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Polling Round\",\"col\":3}},{\"id\":\"EuvQPFVjxp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Polling Count\",\"col\":3}}]",
+ "creation": "2024-05-02 20:13:13.679215",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "map",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Poll Tracker",
+ "links": [],
+ "modified": "2024-05-07 12:19:23.922944",
+ "modified_by": "Administrator",
+ "module": "Poll Tracker",
+ "name": "Poll Tracker",
+ "number_cards": [],
+ "owner": "jothimurugan@gmail.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Political Party",
+   "link_to": "Political Party",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Reporter",
+   "link_to": "Reporter",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Constituency",
+   "link_to": "Constituency",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Polling Count",
+   "link_to": "Polling Count",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Election Candidate",
+   "link_to": "Election Candidate",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Polling Round",
+   "link_to": "Polling Round",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Poll Tracker"
+}

@@ -8,23 +8,17 @@
  "field_order": [
   "candidateid",
   "candidate_name",
-  "partyid",
+  "party",
+  "party_image",
   "region",
-  "constituency"
+  "constituency",
+  "votes"
  ],
  "fields": [
   {
    "fieldname": "candidateid",
    "fieldtype": "Data",
    "label": "CandidateID"
-  },
-  {
-   "fieldname": "partyid",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Party",
-   "options": "Political Party"
   },
   {
    "fieldname": "region",
@@ -47,11 +41,33 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Candidate Name"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Party",
+   "options": "Political Party"
+  },
+  {
+   "fetch_from": "party.party_name_image",
+   "fieldname": "party_image",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Party Image",
+   "options": "Political Party"
+  },
+  {
+   "fieldname": "votes",
+   "fieldtype": "Data",
+   "label": "Votes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-03 10:39:57.503434",
+ "modified": "2024-05-08 13:55:33.805994",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Election Candidate",

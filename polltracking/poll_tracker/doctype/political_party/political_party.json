@@ -7,7 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "partyid",
-  "party_name"
+  "party_name",
+  "party_name_image",
+  "party_name_image_preview"
  ],
  "fields": [
   {
@@ -22,11 +24,22 @@
    "in_standard_filter": 1,
    "label": "Party Name",
    "unique": 1
+  },
+  {
+   "fieldname": "party_name_image",
+   "fieldtype": "Attach",
+   "label": "Party Name Image"
+  },
+  {
+   "fieldname": "party_name_image_preview",
+   "fieldtype": "Image",
+   "label": "Party Name Image Preview",
+   "options": "party_name_image"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-03 15:09:05.469017",
+ "modified": "2024-05-07 18:33:13.691205",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Political Party",
