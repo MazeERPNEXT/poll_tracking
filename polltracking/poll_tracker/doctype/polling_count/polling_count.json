@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{YYYY}-{constituency}-{round}",
  "creation": "2024-05-02 19:47:58.558329",
@@ -75,7 +76,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-08 19:00:45.739781",
+ "modified": "2024-05-09 10:43:33.083864",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Polling Count",
