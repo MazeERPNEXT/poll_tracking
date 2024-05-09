@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{candidate_name} - {partyid}",
+ "autoname": "format:{candidate_name}",
  "creation": "2024-05-02 19:44:14.207612",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -53,21 +53,21 @@
   {
    "fetch_from": "party.party_name_image",
    "fieldname": "party_image",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Party Image",
-   "options": "Political Party"
+   "label": "Party Image"
   },
   {
    "fieldname": "votes",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Votes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-08 13:55:33.805994",
+ "modified": "2024-05-08 17:23:21.987438",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Election Candidate",

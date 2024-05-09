@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{constituency}",
+ "autoname": "format:{YYYY}-{constituency}-{round}",
  "creation": "2024-05-02 19:47:58.558329",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -75,7 +75,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-07 16:35:20.904451",
+ "modified": "2024-05-08 19:00:45.739781",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Polling Count",

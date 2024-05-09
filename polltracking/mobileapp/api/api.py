@@ -4,6 +4,7 @@ from frappe.utils import get_site_name
 import base64
 from datetime import datetime 
 from frappe import _
+import json
 
 @frappe.whitelist(allow_guest=True )
 def mobile_login(usr,pwd):
@@ -126,7 +127,8 @@ def get_constituency_and_candidates(user_email):
         "constituency": constituency,
         "candidates": candidates
     }
-    return response
+    
+    return json.dumps(response,sort_keys=True, indent=4)
 # @frappe.whitelist(allow_guest=True)
 # @frappe.whitelist( allow_guest=True ) 
 # def get_sales_invoice_list():

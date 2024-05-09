@@ -8,6 +8,7 @@
  "field_order": [
   "partyid",
   "party_name",
+  "short_name",
   "party_name_image",
   "party_name_image_preview"
  ],
@@ -35,11 +36,19 @@
    "fieldtype": "Image",
    "label": "Party Name Image Preview",
    "options": "party_name_image"
+  },
+  {
+   "fieldname": "short_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Short Name",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-07 18:33:13.691205",
+ "modified": "2024-05-08 16:15:24.668020",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Political Party",
