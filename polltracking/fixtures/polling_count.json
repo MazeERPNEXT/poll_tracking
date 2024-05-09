@@ -1,0 +1,481 @@
+[
+ {
+  "constituency": "Cuddalore",
+  "docstatus": 0,
+  "doctype": "Polling Count",
+  "modified": "2024-05-08 19:01:00.376064",
+  "name": "2024-Cuddalore-R2",
+  "polling_items": [
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": null,
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R2",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "Total",
+    "previous_rounds_votes": 0,
+    "total": 0
+   }
+  ],
+  "reporter": "Jk",
+  "round": "R2",
+  "starting_time": "2024-05-08 18:56:54",
+  "state": "Tamil nadu"
+ },
+ {
+  "constituency": "Cuddalore",
+  "docstatus": 0,
+  "doctype": "Polling Count",
+  "modified": "2024-05-08 19:01:51.436780",
+  "name": "2024-Cuddalore-R1",
+  "polling_items": [
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": null,
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R1",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "Total",
+    "previous_rounds_votes": 0,
+    "total": 0
+   }
+  ],
+  "reporter": "Jk",
+  "round": "R1",
+  "starting_time": "2024-05-08 18:56:54",
+  "state": "Tamil nadu"
+ },
+ {
+  "constituency": "Cuddalore",
+  "docstatus": 0,
+  "doctype": "Polling Count",
+  "modified": "2024-05-08 19:07:37.394048",
+  "name": "2024-Cuddalore-R3",
+  "polling_items": [
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": null,
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "Total",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": "sarathi",
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "DMK",
+    "previous_rounds_votes": 0,
+    "total": 0
+   },
+   {
+    "candidate": null,
+    "current_rounds_votes": 0,
+    "parent": "2024-Cuddalore-R3",
+    "parentfield": "polling_items",
+    "parenttype": "Polling Count",
+    "party": "Total",
+    "previous_rounds_votes": 0,
+    "total": 0
+   }
+  ],
+  "reporter": "Jk",
+  "round": "R3",
+  "starting_time": "2024-05-08 18:56:54",
+  "state": "Tamil nadu"
+ }
+]

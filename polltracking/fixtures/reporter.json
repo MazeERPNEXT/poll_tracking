@@ -1,0 +1,38 @@
+[
+ {
+  "constituency": "Arani",
+  "docstatus": 0,
+  "doctype": "Reporter",
+  "imei_number": "358429072367842",
+  "modified": "2024-05-06 17:18:25.345025",
+  "name": "jothi",
+  "region": "Southern Tamil Nadu",
+  "reporterid": "1",
+  "user": "jothimurugan@gmail.com",
+  "user_name": "jothi"
+ },
+ {
+  "constituency": "Thanjavur",
+  "docstatus": 0,
+  "doctype": "Reporter",
+  "imei_number": "358429072367843",
+  "modified": "2024-05-03 10:34:12.407275",
+  "name": "reporter",
+  "region": "Central Tamil Nadu",
+  "reporterid": "2",
+  "user": "reporter@gmail.com",
+  "user_name": "reporter"
+ },
+ {
+  "constituency": "Pollachi",
+  "docstatus": 0,
+  "doctype": "Reporter",
+  "imei_number": "358429072367844",
+  "modified": "2024-05-03 10:35:00.625366",
+  "name": "sakthi",
+  "region": "Western Tamil Nadu",
+  "reporterid": "3",
+  "user": "reporter2@gmail.com",
+  "user_name": "sakthi"
+ }
+]

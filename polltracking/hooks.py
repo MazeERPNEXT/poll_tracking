@@ -230,3 +230,10 @@ app_include_css = "poll_tracking.bundle.css"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"doctype":"Reporter"},
+     {"doctype":"Constituency"},
+      {"doctype":"Political Party"},
+      {"doctype":"Election Candidate"},{"doctype":"Polling Round"},{"doctype":"Polling Count"}
+]
+

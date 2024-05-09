@@ -1,0 +1,38 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Polling Round",
+  "modified": "2024-05-03 10:43:46.986910",
+  "name": "R3",
+  "round_id": "R3",
+  "roundnumber": 3,
+  "status": "Open"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Polling Round",
+  "modified": "2024-05-08 19:14:46.762243",
+  "name": "R4",
+  "round_id": "4",
+  "roundnumber": 0,
+  "status": "Open"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Polling Round",
+  "modified": "2024-05-03 10:43:28.448614",
+  "name": "R1",
+  "round_id": "R1",
+  "roundnumber": 1,
+  "status": "Closed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Polling Round",
+  "modified": "2024-05-03 10:42:53.916091",
+  "name": "R2",
+  "round_id": "R2",
+  "roundnumber": 2,
+  "status": "Open"
+ }
+]

@@ -1,0 +1,353 @@
+[
+ {
+  "constituency_name": "Chennai Central",
+  "constituencyid": "1",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:17:02.144146",
+  "name": "Chennai Central",
+  "region": "Chennai"
+ },
+ {
+  "constituency_name": "Chennai North",
+  "constituencyid": "2",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:17:36.441079",
+  "name": "Chennai North",
+  "region": "Chennai"
+ },
+ {
+  "constituency_name": "Chennai South",
+  "constituencyid": "3",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:17:51.860144",
+  "name": "Chennai South",
+  "region": "Chennai"
+ },
+ {
+  "constituency_name": "Sriperumbudur",
+  "constituencyid": "4",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:18:06.187110",
+  "name": "Sriperumbudur",
+  "region": "Chennai"
+ },
+ {
+  "constituency_name": "Kancheepuram",
+  "constituencyid": "5",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:18:21.606330",
+  "name": "Kancheepuram",
+  "region": "Chennai"
+ },
+ {
+  "constituency_name": "Thiruvallur",
+  "constituencyid": "7",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:18:42.454672",
+  "name": "Thiruvallur",
+  "region": "Chennai"
+ },
+ {
+  "constituency_name": "Krishnagiri",
+  "constituencyid": "8",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:18:54.958091",
+  "name": "Krishnagiri",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Dharmapuri",
+  "constituencyid": "9",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:19:04.822909",
+  "name": "Dharmapuri",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Vellore",
+  "constituencyid": "10",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:24:19.956659",
+  "name": "Vellore",
+  "region": "Northern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Tiruvannamalai",
+  "constituencyid": "11",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:24:30.528164",
+  "name": "Tiruvannamalai",
+  "region": "Northern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Viluppuram",
+  "constituencyid": "13",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:24:51.764077",
+  "name": "Viluppuram",
+  "region": "Northern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Kallakurichi",
+  "constituencyid": "14",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:24:55.859378",
+  "name": "Kallakurichi",
+  "region": "Northern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Salem",
+  "constituencyid": "15",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:21:33.934094",
+  "name": "Salem",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Namakkal",
+  "constituencyid": "16",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:26:03.489142",
+  "name": "Namakkal",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Erode",
+  "constituencyid": "17",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:26:14.078250",
+  "name": "Erode",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Tiruppur",
+  "constituencyid": "18",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:26:25.521144",
+  "name": "Tiruppur",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Nilgiris",
+  "constituencyid": "19",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:26:37.646111",
+  "name": "Nilgiris",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Coimbatore",
+  "constituencyid": "20",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:26:48.691247",
+  "name": "Coimbatore",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Pollachi",
+  "constituencyid": "21",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:26:58.558014",
+  "name": "Pollachi",
+  "region": "Western Tamil Nadu"
+ },
+ {
+  "constituency_name": "Dindigul",
+  "constituencyid": "22",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:27:21.436806",
+  "name": "Dindigul",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Karur",
+  "constituencyid": "23",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:27:33.985059",
+  "name": "Karur",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Tiruchirappalli",
+  "constituencyid": "24",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:27:52.770614",
+  "name": "Tiruchirappalli",
+  "region": "Central Tamil Nadu"
+ },
+ {
+  "constituency_name": "Perambalur",
+  "constituencyid": "25",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:28:01.695925",
+  "name": "Perambalur",
+  "region": "Central Tamil Nadu"
+ },
+ {
+  "constituency_name": "Chidambaram",
+  "constituencyid": "27",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:28:36.949732",
+  "name": "Chidambaram",
+  "region": "Central Tamil Nadu"
+ },
+ {
+  "constituency_name": "Mayiladuthurai",
+  "constituencyid": "28",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:28:51.759839",
+  "name": "Mayiladuthurai",
+  "region": "Central Tamil Nadu"
+ },
+ {
+  "constituency_name": "Nagapattinam",
+  "constituencyid": "29",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:29:04.712243",
+  "name": "Nagapattinam",
+  "region": "Central Tamil Nadu"
+ },
+ {
+  "constituency_name": "Thanjavur",
+  "constituencyid": "30",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:29:17.728750",
+  "name": "Thanjavur",
+  "region": "Central Tamil Nadu"
+ },
+ {
+  "constituency_name": "Sivaganga",
+  "constituencyid": "31",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:29:34.508912",
+  "name": "Sivaganga",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Theni",
+  "constituencyid": "33",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:29:58.283813",
+  "name": "Theni",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Virudhunagar",
+  "constituencyid": "34",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:30:10.690661",
+  "name": "Virudhunagar",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Ramanathapuram",
+  "constituencyid": "35",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:30:20.036975",
+  "name": "Ramanathapuram",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Thoothukudi",
+  "constituencyid": "36",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:30:31.294634",
+  "name": "Thoothukudi",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Tenkasi",
+  "constituencyid": "37",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:30:41.190070",
+  "name": "Tenkasi",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Tirunelveli",
+  "constituencyid": "38",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:30:52.888097",
+  "name": "Tirunelveli",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Kanniyakumari",
+  "constituencyid": "39",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:31:11.030455",
+  "name": "Kanniyakumari",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Arakkonam",
+  "constituencyid": "6",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:18:27.155226",
+  "name": "Arakkonam",
+  "region": "Chennai"
+ },
+ {
+  "constituency_name": "Madurai",
+  "constituencyid": "32",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:29:51.077770",
+  "name": "Madurai",
+  "region": "Southern Tamil Nadu"
+ },
+ {
+  "constituency_name": "Cuddalore",
+  "constituencyid": "26",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:28:23.591511",
+  "name": "Cuddalore",
+  "region": "Central Tamil Nadu"
+ },
+ {
+  "constituency_name": "Arani",
+  "constituencyid": "12",
+  "docstatus": 0,
+  "doctype": "Constituency",
+  "modified": "2024-05-03 10:24:46.367793",
+  "name": "Arani",
+  "region": "Northern Tamil Nadu"
+ }
+]

@@ -1,0 +1,41 @@
+[
+ {
+  "candidate_name": "Jothi",
+  "candidateid": "3",
+  "constituency": "Arani",
+  "docstatus": 0,
+  "doctype": "Election Candidate",
+  "modified": "2024-05-08 16:56:43.239420",
+  "name": "Jothi",
+  "party": "Bharatiya Janata Party",
+  "party_image": "/files/BJP_flag.svg.png",
+  "region": "West",
+  "votes": null
+ },
+ {
+  "candidate_name": "Karthick k",
+  "candidateid": "2",
+  "constituency": "Arani",
+  "docstatus": 0,
+  "doctype": "Election Candidate",
+  "modified": "2024-05-08 16:57:50.627272",
+  "name": "karthick k",
+  "party": "All India Anna Dravida Munnetra Kazhagam",
+  "party_image": "/files/AIADMK_OfficialFlag_Vector.svg.png",
+  "region": "West",
+  "votes": null
+ },
+ {
+  "candidate_name": "Sarathi",
+  "candidateid": "1",
+  "constituency": "Arani",
+  "docstatus": 0,
+  "doctype": "Election Candidate",
+  "modified": "2024-05-08 16:57:39.307106",
+  "name": "sarathi",
+  "party": "Aam Aadmi Party",
+  "party_image": "/files/Aam_Aadmi_Party_Flag.svg.png",
+  "region": "West",
+  "votes": null
+ }
+]

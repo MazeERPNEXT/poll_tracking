@@ -1,0 +1,102 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:20:01.204458",
+  "name": "Bahujan Samaj Party",
+  "party_name": "Bahujan Samaj Party",
+  "party_name_image": "/files/Elephant_Bahujan_Samaj_Party.svg.png",
+  "partyid": "2",
+  "short_name": "BSP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:22:58.839237",
+  "name": "Communist Party of India (Marxist)",
+  "party_name": "Communist Party of India (Marxist)",
+  "party_name_image": "/files/CPI-M-flag.svg.png",
+  "partyid": "4",
+  "short_name": "CPI(M)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:26:12.673077",
+  "name": "Indian National Congress",
+  "party_name": "Indian National Congress",
+  "party_name_image": "/files/Indian_National_Congress_Flag.svg.png",
+  "partyid": "5",
+  "short_name": "INC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:27:07.976063",
+  "name": "National People's Party",
+  "party_name": "National People's Party",
+  "party_name_image": "/files/NPP_Flag.jpg",
+  "partyid": "6",
+  "short_name": "NPP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:30:11.624021",
+  "name": "Communist Party of India",
+  "party_name": "Communist Party of India",
+  "party_name_image": "/files/CPI-banner.svg.png",
+  "partyid": "8",
+  "short_name": "CPI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:31:29.341115",
+  "name": "Desiya Murpokku Dravida Kazhagam",
+  "party_name": "Desiya Murpokku Dravida Kazhagam",
+  "party_name_image": "/files/Flag_DMDK.png",
+  "partyid": "10",
+  "short_name": "DMDK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:32:42.110859",
+  "name": "Dravida Munnetra Kazhagam",
+  "party_name": "Dravida Munnetra Kazhagam",
+  "party_name_image": "/files/Flag_DMK.svg.png",
+  "partyid": "11",
+  "short_name": "DMK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:17:21.241610",
+  "name": "Aam Aadmi Party",
+  "party_name": "Aam Aadmi Party",
+  "party_name_image": "/files/Aam_Aadmi_Party_Flag.svg.png",
+  "partyid": "1",
+  "short_name": "AAP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:28:47.199883",
+  "name": "All India Anna Dravida Munnetra Kazhagam",
+  "party_name": "All India Anna Dravida Munnetra Kazhagam",
+  "party_name_image": "/files/AIADMK_OfficialFlag_Vector.svg.png",
+  "partyid": "7",
+  "short_name": "AIADMK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Political Party",
+  "modified": "2024-05-08 16:24:24.383940",
+  "name": "Bharatiya Janata Party",
+  "party_name": "Bharatiya Janata Party",
+  "party_name_image": "/files/BJP_flag.svg.png",
+  "partyid": "3",
+  "short_name": "BJP"
+ }
+]
