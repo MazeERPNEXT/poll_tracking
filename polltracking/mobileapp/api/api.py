@@ -107,7 +107,7 @@ def reporter_to_key_in_polliing_count(data):
 
 
 @frappe.whitelist(allow_guest=True)
-def get_constituency_and_candidates(user_email):
+def get_constituency_and_candidates(user_email,method = "GET"):
     # Authenticate user
     # user = frappe.session.user
     user = user_email
@@ -127,8 +127,7 @@ def get_constituency_and_candidates(user_email):
         "constituency": constituency,
         "candidates": candidates
     }
-    
-    return json.dumps(response,sort_keys=True, indent=4)
+    return response
 # @frappe.whitelist(allow_guest=True)
 # @frappe.whitelist( allow_guest=True ) 
 # def get_sales_invoice_list():

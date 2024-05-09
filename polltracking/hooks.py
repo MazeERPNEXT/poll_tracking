@@ -231,9 +231,9 @@ app_include_css = "poll_tracking.bundle.css"
 # }
 
 fixtures = [
-    {"doctype":"Reporter"},
-     {"doctype":"Constituency"},
-      {"doctype":"Political Party"},
-      {"doctype":"Election Candidate"},{"doctype":"Polling Round"},{"doctype":"Polling Count"}
+    # {"doctype":"Reporter"},
+    #  {"doctype":"Constituency"},
+    #   {"doctype":"Political Party"},
+    #   {"doctype":"Election Candidate"},{"doctype":"Polling Round"},{"doctype":"Polling Count"}
 ]
 
