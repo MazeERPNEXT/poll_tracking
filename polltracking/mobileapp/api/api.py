@@ -129,7 +129,7 @@ def fetch_reporter_against_polling_details(user):
         condidate_details.append({
             "candidate_name":condidate.candidate_name,
             "party":condidate.party,
-            "party_image":get_url()+condidate.party_image,
+            "party_image":get_url()+":8000"+condidate.party_image,
             "votes":None,
         })
     response = {
@@ -151,47 +151,75 @@ def store_votes(user_email, data):
     if existing_polling_count:
         # Update existing record
         polling_count = frappe.get_doc("Polling Count", existing_polling_count[0].name)
-        
-        
+        previous_round = f"R{int(data['round'][1:]) - 1}"
+        if int(data["round"][1:]) > 0:
+            previous_round = f"R{int(data['round'][1:]) - 1}"
+            previous_round_polling_list = frappe.get_all("Polling Count", filters={"round": previous_round},fields = ['*'])
+            if previous_round_polling_list:
+                previous_round_polling_count = frappe.get_doc("Polling Count", previous_round_polling_list[0].name)
+                previous_round_votes_map = {candidate.candidate: candidate.current_rounds_votes for candidate in previous_round_polling_count.polling_items}
+            else:
+                previous_round_votes_map = {}
+        else:
+            previous_round_votes_map = {}
+
         for candidate_data in data["candidates"]:
             # Update or append candidates' votes
             candidate_name = candidate_data["candidate_name"]
             current_round_votes = candidate_data["votes"]
-            total = current_round_votes
+            # total = current_round_votes
+            previous_round_votes = previous_round_votes_map.get(candidate_name, 0)  # Get previous round votes for the candidate
             existing_candidate = next((c for c in polling_count.polling_items if c.candidate == candidate_name), None)
             if existing_candidate:
                 existing_candidate.current_rounds_votes = current_round_votes
-                # existing_candidate.previous_rounds_votes = previous_round_votes
-                existing_candidate.total = total
-            else:
-                # Append new candidate if not already in the list
-                polling_item = frappe.new_doc("Polling Details")
-                polling_item.candidate = candidate_name
-                polling_item.party = candidate_data["party"]
-                polling_item.current_rounds_votes = current_round_votes
-                # polling_item.previous_rounds_votes = previous_round_votes
-                polling_item.total = total
-                polling_count.append("polling_items", polling_item)
-        
+                existing_candidate.previous_rounds_votes = previous_round_votes
+                existing_candidate.total = current_round_votes + previous_round_votes
+            # else:
+            #     # Append new candidate if not already in the list
+            #     polling_item = frappe.new_doc("Polling Details")
+            #     polling_item.candidate = candidate_name
+            #     polling_item.party = candidate_data["party"]
+            #     polling_item.current_rounds_votes = current_round_votes
+            #     polling_item.previous_rounds_votes = previous_round_votes
+            #     polling_item.total = previous_round_votes + current_round_votes
+            #     polling_count.append("polling_items", polling_item)
+
         polling_count.save(ignore_permissions=True)
         frappe.db.commit()
         return {'success_msg': "Data Updated Successfully"}
     else:
         # Insert new record
+        previous_round = f"R{int(data['round'][1:]) - 1}"
+        if int(data["round"][1:]) > 0:
+            previous_round = f"R{int(data['round'][1:]) - 1}"
+            previous_round_polling_list = frappe.get_all("Polling Count", filters={"round": previous_round},fields = ['*'])
+            if previous_round_polling_list:
+                previous_round_polling_count = frappe.get_doc("Polling Count", previous_round_polling_list[0].name)
+                previous_round_votes_map = {candidate.candidate: candidate.current_rounds_votes for candidate in previous_round_polling_count.polling_items}
+            else:
+                previous_round_votes_map = {}
+        else:
+            previous_round_votes_map = {}
+        
         polling_count = frappe.new_doc("Polling Count")
         polling_count.state = "Tamil Nadu"
         polling_count.constituency = data["constituency"]
         polling_count.reporter = user.username
         polling_count.round = data["round"]
+        
 
         # Add candidates as child documents
         for candidate_data in data["candidates"]:
+            candidate_name = candidate_data["candidate_name"]
+            previous_round_votes = previous_round_votes_map.get(candidate_name, 0)  # Get previous round votes for the candidate
+            # existing_candidate = next((c for c in polling_count.polling_items if c.candidate == candidate_name), None)
+
             polling_count.append("polling_items",{
-                "candidate": candidate_data["candidate_name"],
+                "candidate": candidate_name,
                 "party": candidate_data["party"],
                 "current_rounds_votes": candidate_data["votes"],
-                # "previous_round_votes": candidate_data["previous_round_votes"],
-                "total":candidate_data["votes"]
+                "previous_rounds_votes": previous_round_votes,
+                "total":previous_round_votes + candidate_data["votes"]
             })
             
         polling_count.insert(ignore_permissions=True)
@@ -223,7 +251,7 @@ def fetch_round_candidate_details(round):
         candidate_data = {
             "candidate_name": candidate.candidate,
             "party": candidate.party,
-            "party_image": get_url() + party.party_name_image,
+            "party_image": get_url() +":8000"+ party.party_name_image,
             "votes": candidate.current_rounds_votes
         }
         response["candidates"].append(candidate_data)
