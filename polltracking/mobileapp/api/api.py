@@ -108,7 +108,9 @@ def reporter_to_key_in_polliing_count(data):
     return data
 
 
-def fetch_initial_candidate_details(user_email):
+
+def fetch_initial_candidate_details(user_email,round):
+    
     users_exists = frappe.db.exists("User", user_email)
     if not users_exists:
         return {"error_msg":"User is not exists"}
@@ -116,29 +118,55 @@ def fetch_initial_candidate_details(user_email):
     user = frappe.get_doc("User",user_email)
     if not user or not  "News Reporter" in frappe.get_roles(user.email):
         frappe.throw(_("Access Denied"), frappe.PermissionError)
-    return fetch_reporter_against_polling_details(user)
+    return fetch_reporter_against_polling_details(user,round)
     
     
-def fetch_reporter_against_polling_details(user):
+def fetch_reporter_against_polling_details(user,round):
     reporter = frappe.get_all("Reporter", filters={"user_name": user.username}, fields=["*"])
+    
     constituency = frappe.get_value("Reporter", reporter[0].user_name, "constituency")
+    
     # Fetch candidates and parties for the constituency
     candidates = frappe.get_all("Election Candidate", filters={"constituency": constituency}, fields=["candidate_name", "party","party_image","votes"])
     condidate_details = []
-    for condidate in candidates:
-        condidate_details.append({
-            "candidate_name":condidate.candidate_name,
-            "party":condidate.party,
-            "party_image":get_url()+":8000"+condidate.party_image,
-            "votes":None,
-        })
-    response = {
+
+    polling_round_list = frappe.get_all("Polling Count",filters = {"round":round},fields = ['*'])
+   
+    if polling_round_list:
+        for polling_round_row in polling_round_list:    
+            polling_items = frappe.get_all("Polling details",filters = {'parent':polling_round_row.name},fields = '*')
+            for polling_item in  polling_items:
+                    condidate_details.append({
+                    "candidate_name":polling_item.candidate,
+                    "party":polling_item.party,
+                    "party_image":get_url()+":8000"+polling_item.party_name_image if polling_item.party_name_image else None,
+                    "votes":polling_item.current_rounds_votes,
+                })
+                    
+        response = {
             "constituency": constituency,
             "reporter":user.username,
-            "round":None,
+            "round":round,
+            "candidates": condidate_details
+        }
+    else:
+        for condidate in candidates:
+            condidate_details.append({
+                "candidate_name":condidate.candidate_name,
+                "party":condidate.party,
+                "party_image":get_url()+":8000"+condidate.party_image,
+                "votes":None,
+            })
+        
+        response = {
+            "constituency": constituency,
+            "reporter":user.username,
+            "round":round,
             "candidates": condidate_details
         }
     return response
+
+
 
 def store_votes(user_email, data):
     
@@ -258,95 +286,23 @@ def fetch_round_candidate_details(round):
 
     return response
 
+
 @frappe.whitelist()
-def get_constituency_and_candidates(method = None,data = None,id=None,round = None):
+def get_constituency_and_candidates(user_email = None,method = None,data = None,id=None,round = None):
     try:
-        user_email = frappe.session.user
+        user_email = frappe.session.user or user_email
         user = frappe.get_doc("User",user_email)
         
-        if method == "GET_INITIAL":
-            return  fetch_initial_candidate_details(user_email)
+        # if method == "GET_INITIAL":
+        if round:
+            return  fetch_initial_candidate_details(user_email,round)
             
-        elif method == "POST_VOTES":
+        elif data and user_email:
             return store_votes(user_email, data)
         
-        elif method == "GET_ROUND":
-            return fetch_round_candidate_details(round)
-        else:
-            return {"error_msg": "Invalid method"}
-            # return fetch_initial_candidate_details(data)
-        # users_exists = frappe.db.exists("User", user_email)
-        # if not users_exists:
-        #     return {"error_msg":"User is not exists"}
+        # elif round:
+        #     return fetch_round_candidate_details(round)
         
-        # user = user_email
-        # if not user or not  "News Reporter" in frappe.get_roles(user):
-        #     frappe.throw(_("Access Denied"), frappe.PermissionError)
-            
-        # user = frappe.get_doc("User",user)
-        # reporter = frappe.get_all("Reporter", filters={"user_name": user.username}, fields=["*"])
-
-        # # Retrieve reporter's constituency
-        # constituency = frappe.get_value("Reporter", reporter[0].user_name, "constituency")
-        
-        # # Fetch candidates and parties for the constituency
-        # candidates = frappe.get_all("Election Candidate", filters={"constituency": constituency}, fields=["candidate_name", "party","party_image","votes"])
-        
-        # # Prepare response
-        if method == "GET":
-         
-            response = {
-                "constituency": constituency,
-                "reporter":user.username,
-                "round":None,
-                "candidates": candidates
-            }
-            return response
-        elif method == "POST":
-            data ={
-                "constituency": "Arani",
-                "reporter": "jothi",
-                "round": 'R2',
-                "candidates": [
-                    {
-                        "candidate_name": "Sarathi",
-                        "party": "Aam Aadmi Party",
-                        "party_image": "http://polltracking.com:8007/files/Aam_Aadmi_Party_Flag.svg.png",
-                        "votes": 1000
-                        
-                    },
-                    {
-                        "candidate_name": "Karthick k",
-                        "party": "All India Anna Dravida Munnetra Kazhagam",
-                        "party_image": "http://polltracking.com:8007/files/Aam_Aadmi_Party_Flag.svg.png",
-                        "votes": 1000
-                        
-                    },
-                    {
-                        "candidate_name": "Jothi",
-                        "party": "Bharatiya Janata Party",
-                        "party_image": "http://polltracking.com:8007/files/Aam_Aadmi_Party_Flag.svg.png",
-                        "votes": 1000
-                    }
-                ]
-                }
-            
-            polling_count = frappe.new_doc("Polling Count")
-            polling_count.state = "Tamil Nadu"
-            polling_count.constituency = data["constituency"]
-            polling_count.reporter = user.username
-            polling_count.round = data["round"]
-
-            # Add candidates as child documents
-            for candidate_data in data["candidates"]:
-                polling_count.append("polling_items",{
-                    "candidate":candidate_data["candidate_name"],
-                    "party":candidate_data["party"],
-                        "current_rounds_votes":candidate_data["votes"]
-                })
-                
-            polling_count.insert(ignore_permissions=True)
-            frappe.db.commit()
     except Exception as e :
         return e        
     
