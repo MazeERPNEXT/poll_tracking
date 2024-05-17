@@ -26,6 +26,13 @@ frappe.query_reports["Polling Track"] = {
             // default: frappe.defaults.get_user_default('company')
         },
         {
+            fieldname: 'condidate',
+            label: __('Election Candidate'),
+            fieldtype: 'Link',
+            options: 'Election Candidate',
+            // default: frappe.defaults.get_user_default('company')
+        },
+        {
             fieldname: 'reporter',
             label: __('Reporter'),
             fieldtype: 'Data',

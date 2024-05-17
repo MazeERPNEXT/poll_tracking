@@ -1,10 +1,8 @@
 import frappe
-from frappe import auth
 from frappe.utils import get_site_name
 import base64
 from datetime import datetime 
 from frappe import _
-import json
 from frappe.utils import get_url
 
 
@@ -78,35 +76,6 @@ def generate_keys(user):
     
     return {"token": token}
 
-# @frappe.whitelist(allow_guest=True)
-# def registered_user_profile_details(email):
-#     reporter = frappe.get_doc("Reporter",email)
-#     user = frappe.get_doc("User",reporter.user)
-#     # Convert string to datetime object
-#     datetime_obj = datetime.strptime(user.last_login, "%Y-%m-%d %H:%M:%S.%f")
-
-#     # Format the datetime object
-#     user_last_login = datetime_obj.strftime("%Y-%m-%d %H:%M:%S")
-#     return {
-#             "reporter":reporter,
-#             # "user":user
-#             # "user":{
-#             #     "name":user.name,
-#             #     "first_name":user.first_name,
-#             #     "email":user.email,
-#             #     "username":user.username,
-#             #     "full_name":user.full_name,
-#             #     "language":user.language,
-#             #     "last_login":user_last_login,
-#             #     "role_profiles":user.role_profiles,
-#             #     "roles":user.roles                
-#             #      }
-#             }
-     
-@frappe.whitelist(allow_guest=True)
-def reporter_to_key_in_polliing_count(data):
-    return data
-
 
 
 def fetch_initial_candidate_details(user_email,round):
@@ -116,8 +85,8 @@ def fetch_initial_candidate_details(user_email,round):
         return {"error_msg":"User is not exists"}
     
     user = frappe.get_doc("User",user_email)
-    if not user or not  "News Reporter" in frappe.get_roles(user.email):
-        frappe.throw(_("Access Denied"), frappe.PermissionError)
+    # if not user or not  "News Reporter" in frappe.get_roles(user.email):
+    #     frappe.throw(_("Access Denied"), frappe.PermissionError)
     return fetch_reporter_against_polling_details(user,round)
     
     
@@ -142,12 +111,14 @@ def fetch_reporter_against_polling_details(user,round):
                     "party_image":get_url()+":8000"+polling_item.party_name_image if polling_item.party_name_image else None,
                     "votes":polling_item.current_rounds_votes,
                 })
+            sorted_condidate_details = sorted(condidate_details, key=lambda x: x['candidate_name'])
+
                     
         response = {
             "constituency": constituency,
             "reporter":user.username,
             "round":round,
-            "candidates": condidate_details
+            "candidates": sorted_condidate_details
         }
     else:
         for condidate in candidates:
@@ -155,7 +126,7 @@ def fetch_reporter_against_polling_details(user,round):
                 "candidate_name":condidate.candidate_name,
                 "party":condidate.party,
                 "party_image":get_url()+":8000"+condidate.party_image,
-                "votes":None,
+                "votes":0,
             })
         
         response = {
@@ -225,7 +196,7 @@ def store_votes(user_email, data):
                 previous_round_polling_count = frappe.get_doc("Polling Count", previous_round_polling_list[0].name)
                 previous_round_votes_map = {candidate.candidate: candidate.current_rounds_votes for candidate in previous_round_polling_count.polling_items}
             else:
-                previous_round_votes_map = {}
+                previous_round_votes_map = {'candidate_name':0}
         else:
             previous_round_votes_map = {}
         
@@ -245,6 +216,7 @@ def store_votes(user_email, data):
             polling_count.append("polling_items",{
                 "candidate": candidate_name,
                 "party": candidate_data["party"],
+                "party_image":candidate_data['party_image'],
                 "current_rounds_votes": candidate_data["votes"],
                 "previous_rounds_votes": previous_round_votes,
                 "total":previous_round_votes + candidate_data["votes"]
@@ -288,68 +260,16 @@ def fetch_round_candidate_details(round):
 
 
 @frappe.whitelist()
-def get_constituency_and_candidates(user_email = None,method = None,data = None,id=None,round = None):
+def get_constituency_and_candidates(user_email = None,data = None,round = None):
     try:
         user_email = frappe.session.user or user_email
         user = frappe.get_doc("User",user_email)
         
-        # if method == "GET_INITIAL":
         if round:
             return  fetch_initial_candidate_details(user_email,round)
             
         elif data and user_email:
             return store_votes(user_email, data)
         
-        # elif round:
-        #     return fetch_round_candidate_details(round)
-        
     except Exception as e :
-        return e        
-    
-    
-        
-        
-    # if method == "GET":
-        # return response
-       
-         
-    # elif method == "POST":
-    #     polling_count = frappe.new_doc("Polling Count")
-    #     polling_count.state = "Tamil Nadu"
-    #     polling_count.constituency = constituency
-    #     polling_count.reporter = user.username
-    #     polling_count.round = response.round
-        
-    #     # Add candidates as child documents
-    #     for candidate_data in response.candidates:
-    #         candidate = polling_count.append("candidates", {})
-    #         candidate.candidate_name = candidate_data["candidate_name"]
-    #         candidate.party = candidate_data["party"]
-    #         candidate.party_image = candidate_data["party_image"]
-    #         candidate.current_rounds_votes = candidate_data["votes"]
-
-    #     # Save the polling count document
-    #     polling_count.insert(ignore_permissions=True)
-    
-    # @frappe.whitelist(allow_guest=True)
-# @frappe.whitelist( allow_guest=True ) 
-# def get_sales_invoice_list():
-#     # Get all sales invoice list 
-#     sales_invoices = frappe.get_all('sales invoice', fields=['*'],order_by='creation desc')
-#     sales_invoice_list = []
-
-#     # Iterate over shipments
-#     for sales_invoice in sales_invoices:
-#         # Get items for the current shipment
-#         items = frappe.get_all('Items', fields=['*'], filters={'parent': sales_invoice.name})
-
-#         # Create a dictionary entry for the current shipment
-#         sales_invoice_dict = {
-#             'sales_invoice_details': sales_invoice,
-#             'items': items
-#         }
-
-#         # Add the shipment_dict to the result_dict using the shipment name as the key
-#         sales_invoice_list.append(sales_invoice_dict)
-#         frappe.local.response['message'] = sales_invoice_list
-   
+        return print(e)        

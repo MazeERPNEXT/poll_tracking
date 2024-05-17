@@ -68,7 +68,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-09 10:43:07.315686",
+ "modified": "2024-05-17 14:51:55.957281",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Election Candidate",
@@ -88,7 +88,7 @@
    "write": 1
   }
  ],
- "sort_field": "creation",
- "sort_order": "DESC",
+ "sort_field": "candidate_name",
+ "sort_order": "ASC",
  "states": []
 }

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:round_id",
  "creation": "2024-05-02 19:46:07.633822",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -28,15 +29,17 @@
    "fieldname": "round_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Round ID"
+   "label": "Round ID",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 22:59:20.060918",
+ "modified": "2024-05-17 14:34:34.077398",
  "modified_by": "Administrator",
  "module": "Poll Tracker",
  "name": "Polling Round",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
