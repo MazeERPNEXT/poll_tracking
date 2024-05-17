@@ -216,7 +216,7 @@ def store_votes(user_email, data):
             polling_count.append("polling_items",{
                 "candidate": candidate_name,
                 "party": candidate_data["party"],
-                "party_image":candidate_data['party_image'],
+                # "party_image":candidate_data['party_image'],
                 "current_rounds_votes": candidate_data["votes"],
                 "previous_rounds_votes": previous_round_votes,
                 "total":previous_round_votes + candidate_data["votes"]
